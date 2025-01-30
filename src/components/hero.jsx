@@ -22,44 +22,44 @@ const Hero = ({ address, phone, email }) => {
       />
       <div className="w-full h-screen relative ">
         <div className="relative h-screen text-center flex flex-col justify-center items-center ">
-          <h1 className="font-normal text-7xl text-center mt-24 text-white capitalize max-sm:text-[55px]">
-            Find The Comfortable Place
+          <h1 className="font-normal text-7xl text-center mt-24 text-gray-600 capitalize max-sm:text-[55px]">
+            Find The <span className='text-orange-500' > Comfortable Place </span>
             <br /> that relax your mind
           </h1>
           {/* Icons and Text under Heading */}
           <div className="hidden sm:flex mt-24 justify-center items-center">
-            <div className="flex mr-11 px-4 bg-blue-700 rounded-full">
+            <div className="flex mr-11 px-4  rounded-full">
               <Image
                 src={arrowIcon}
                 alt="arrow icon"
-                className="w-5 h-5 mx-4 self-center"
+                className="w-7 h-7 mx-4 self-center"
               />
-              <p className="text-white text-xl py-2 ">{address}</p>
+              <p className="text-gray-700 text-2xl py-2 ">{address}</p>
             </div>
 
-            <div className="flex ml-10 mr-10 px-4 bg-blue-700 rounded-full">
+            <div className="flex ml-10 mr-10 px-4  rounded-full">
               <Image
                 src={phoneIcon}
                 alt="phone icon"
-                className="w-5 h-5 mx-4 self-center"
+                className="w-7 h-7 mx-4 self-center"
               />
-              <p className="text-white text-xl py-2">{phone}</p>
+              <p className="text-gray-700 text-2xl py-2">{phone}</p>
             </div>
 
-            <div className="flex ml-20 px-4 bg-blue-700 rounded-full">
+            <div className="flex ml-20 px-4  rounded-full">
               <Image
                 src={mailIcon}
                 alt="mail icon"
-                className="w-5 h-5 mx-4 self-center"
+                className="w-7 h-7 mx-4 self-center"
               />
-              <p className="text-white text-xl py-2">{email}</p>
+              <p className="text-gray-700 text-2xl py-2">{email}</p>
             </div>
           </div>
           {/* Show more button  */}
           <div className="  absolute bottom-8 w-full text-center ">
             <button
               onClick={showMoreBtn}
-              className=" text-blue-900 font-bold text-xl capitalize shadow-lg bg-white hover:bg-orange-500 hover:text-white px-4 py-1 rounded-3xl h-14 w-40"
+              className=" text-white font-bold text-xl capitalize shadow-lg bg-blue-900 hover:bg-orange-500 hover:text-white px-4 py-1 rounded-3xl h-14 w-40"
             >
               show more
             </button>
